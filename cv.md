@@ -12,3 +12,13 @@
 **E-mail:** <sashtje.lefevre@gmail.com>
 
 ---
+
+## About myself:
+
+I enjoy learning Frontend Development and making my own projects too.
+
+I want to become an excellent specialist, to know all the details in my working area and to create interesting and amazing projects.
+
+I am purposeful, responsible, learn quickly and enjoy constantly learning something new and easily find a common language with different people.
+
+---
