@@ -53,3 +53,13 @@ function factorial(number) {
   I really like the book "CSS in Depth" written by Keith J. Grant and I liked the book "The principles of Object-oriented JavaScript" written by Nicholas C. Zakas.
 
 ---
+
+## Language:
+
+My English level is B2.
+
+- I have **4 sertificates** in the **Simpler app** from Elementary to Upper-Intermediate.
+- On **Duolingo.com** my current score is **41 550**.
+- I have **video calls experience** with native speakers.
+- **I adore English**, love to read **Medium.com**, books and programming articles.
+- I like to watch different kinds of videos in English.
