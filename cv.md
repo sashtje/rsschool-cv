@@ -43,3 +43,13 @@ function factorial(number) {
 ```
 
 ---
+
+## Education and courses:
+
+- I have two certificates from freecodecamp, [my codepen](https://codepen.io/sashtje).
+- I am also learning on [webref](https://webref.ru/), [htmlbook](http://htmlbook.ru), [w3schools](https://www.w3schools.com/).
+
+* I have read books on html&css, js, jQuery topics.\
+  I really like the book "CSS in Depth" written by Keith J. Grant and I liked the book "The principles of Object-oriented JavaScript" written by Nicholas C. Zakas.
+
+---
