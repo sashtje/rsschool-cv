@@ -22,3 +22,13 @@ I want to become an excellent specialist, to know all the details in my working 
 I am purposeful, responsible, learn quickly and enjoy constantly learning something new and easily find a common language with different people.
 
 ---
+
+## Skills:
+
+- HTML, CSS, SASS/SCSS, Bootstrap, Markdown, BEM, Prepros
+- JS, jQuery, SQL, PHP (a little)
+- Git, GitHub
+- Sublime Text, VSCode
+- Photoshop, Figma, Inkscape
+
+---
