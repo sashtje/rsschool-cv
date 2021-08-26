@@ -32,3 +32,14 @@ I am purposeful, responsible, learn quickly and enjoy constantly learning someth
 - Photoshop, Figma, Inkscape
 
 ---
+
+## Code example:
+
+```javascript
+function factorial(number) {
+  if (number == 0 || number == 1) return 1;
+  return factorial(number - 1) * number;
+}
+```
+
+---
