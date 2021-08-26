@@ -5,3 +5,10 @@
 **Junior Frontend Developer**
 
 ---
+
+## Contact information:
+
+**GitHub:** sashtje\
+**E-mail:** <sashtje.lefevre@gmail.com>
+
+---
