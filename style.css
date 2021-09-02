@@ -5,6 +5,23 @@
 body {
   background-image: linear-gradient(135deg, #ff6fd8 10%, #3813c2 100%);
   font-family: "PT Sans", sans-serif;
+  padding: 20px;
+}
+
+a {
+  color: #0000ff;
+}
+
+a:visited {
+  color: rgb(246, 9, 246);
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+a:active {
+  color: #ff7300;
 }
 
 /* Scrollbar */
@@ -18,18 +35,19 @@ body {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #b3b2b2;
+  background: #918f8f;
   border-radius: 16px;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.5),
     inset -2px -2px 2px rgba(0, 0, 0, 0.5);
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #918f8f;
+  background: #6d6c6c;
 }
 
 .cv {
   background-color: #ffffff;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.6);
 }
 
 .cv_s {
@@ -38,50 +56,129 @@ body {
 }
 
 .header {
+  text-align: center;
+  padding: 30px 15px;
 }
 
 .header__title {
   font-family: "PT Serif", serif;
   font-weight: bold;
+  font-size: 2rem;
+  color: #3813c2;
 }
 
 .header__subtitle {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-top: 10px;
+  color: #db62f3;
 }
 
 .cv__aside {
 }
 
 .cv__photo {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.cv__photo img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cv__photo img:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.cv__aside-section {
+  margin-top: 35px;
+}
+
+.cv_main-section {
+  margin-top: 35px;
 }
 
 .section {
+  padding: 0 15px;
 }
 
 .section__title {
   font-family: "PT Serif", serif;
   font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .section__text {
+  margin-top: 15px;
+  line-height: 1.4;
 }
 
 .section__contacts-list {
+  margin-top: 15px;
+}
+
+.section__contacts-list li + li {
+  margin-top: 15px;
+}
+
+.section__contacts-list a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.section__contacts-list img {
+  vertical-align: middle;
 }
 
 .cv__main {
 }
 
 .section__skills-list {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.section__skills-list li {
+  display: inline-block;
+  margin: 20px 10px;
+}
+
+.section__skills-list figure {
+  text-align: center;
+}
+
+.section__skills-list figcaption {
+  margin-top: 5px;
 }
 
 .section__code {
   font-family: "Source Code Pro", monospace;
+  overflow: auto;
+  margin-top: 15px;
+  background-color: #ebe6e6;
+  padding: 5px;
+  line-height: 1.4;
 }
 
 .section__list {
+  margin-top: 15px;
+  list-style-type: square;
+  margin-left: 30px;
+  line-height: 1.4;
+}
+
+.section__list li + li {
+  margin-top: 15px;
 }
 
 .footer {
+  margin-top: 35px;
+  padding: 10px 5px 20px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer__github {

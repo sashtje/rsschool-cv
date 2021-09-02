@@ -14,7 +14,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:wght@700&family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;&family=PT+Serif:wght@700&family=Source+Code+Pro&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -26,12 +26,16 @@
     </header>
 
     <aside class="cv__aside">
-      <img class="cv__photo" src="images/sashtje.jpg" alt="personal photo">
-      <section class="section">
+      <div class="cv__photo">
+        <img src="images/sashtje.jpg" alt="personal photo">
+      </div>
+      <section class="cv__aside-section section">
         <h2 class="section__title">About myself:</h2>
-        <p class="section__text">I enjoy learning Frontend Development and making my own projects. My goal is to become an excellent specialist, to know all the details in my working area and to create interesting and amazing works. I am purposeful, responsible, learn quickly and enjoy constantly learning something new and easily find a common language with different people.</p>
+        <p class="section__text">I enjoy learning Frontend Development and making my own projects.</p>
+        <p class="section__text">My goal is to become an excellent specialist, to know all the details in my working area and to create interesting and amazing works.</p>
+        <p class="section__text">I am purposeful, responsible, learn quickly and enjoy constantly learning something new and easily find a common language with different people.</p>
       </section>
-      <section class="section">
+      <section class="cv__aside-section section">
         <h2 class="section__title">Contacts:</h2>
         <ul class="section__contacts-list">
           <li>
@@ -54,7 +58,7 @@
     </aside>
 
     <main class="cv__main">
-      <section class="section">
+      <section class="cv_main-section section">
         <h2 class="section__title">Skills:</h2>
         <ul class="section__skills-list">
           <li>
@@ -167,14 +171,14 @@
           </li>
         </ul>
       </section>
-      <section class="section">
+      <section class="cv_main-section section">
         <h2 class="section__title">Code example:</h2>
         <pre class="section__code"><code>function factorial(number) {
 <!--     -->  if (number == 0 || number == 1) return 1;
 <!--     -->  return factorial(number - 1) * number;
 <!--     -->}</code></pre>
       </section>
-      <section class="section">
+      <section class="cv_main-section section">
         <h2 class="section__title">Education and courses:</h2>
         <ul class="section__list">
           <li>I have two certificates from <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp</a>.</li>
@@ -182,7 +186,7 @@
           <li>I have read books on html&css, js, jQuery topics. I really like the book “CSS in Depth” written by Keith J. Grant and I liked the book “The principles of Object-oriented JavaScript” written by Nicholas C. Zakas.</li>
         </ul>
       </section>
-      <section class="section">
+      <section class="cv_main-section section">
         <h2 class="section__title">Language:</h2>
         <p class="section__text">My English level is B2.</p>
         <ul class="section__list">
