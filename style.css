@@ -126,10 +126,17 @@ a:active {
 .section__contacts-list a {
   display: inline-block;
   vertical-align: middle;
+  line-height: 2;
+}
+
+.section__contacts-list a:hover img {
+  transform: scale(1.4);
 }
 
 .section__contacts-list img {
   vertical-align: middle;
+  margin-right: 5px;
+  transition: transform 0.4s ease-in-out;
 }
 
 .cv__main {
@@ -141,8 +148,15 @@ a:active {
 }
 
 .section__skills-list li {
+  padding: 5px;
   display: inline-block;
   margin: 20px 10px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.section__skills-list li:hover {
+  transform: translateY(-10px) scale(1.4);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .section__skills-list figure {
@@ -179,13 +193,29 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  perspective: 100em;
 }
 
 .footer__github {
+  transition: transform 1s ease-in-out;
+}
+
+.footer__github:hover {
+  transform: rotateY(360deg);
 }
 
 .footer__copyright {
+  transition: transform 1s ease-in-out;
+}
+
+.footer__copyright:hover {
+  transform: rotateY(360deg) scale(2);
 }
 
 .footer__rsschool {
+  transition: transform 1s ease-in-out;
+}
+
+.footer__rsschool:hover {
+  transform: rotateY(-360deg);
 }
