@@ -21,6 +21,17 @@
   color: #3813c2;
 }
 
+.section__text_color-hightlight {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #8906bd;
+}
+
+.section__text-smile {
+  font-weight: normal;
+  color: #b700ff;
+}
+
 .section__contacts-list,
 .section__contacts-list li + li {
   margin-top: 15px;
