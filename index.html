@@ -40,7 +40,13 @@
     />
 
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main-styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <div class="cv cv_s">
@@ -129,8 +135,8 @@
         <p class="welcome__subtitle">Junior Frontend Developer</p>
       </section>
 
-      <aside class="cv__aside">
-        <div class="cv__photo">
+      <aside class="cv__aside aside">
+        <div class="aside__photo">
           <img
             src="images/sashtje.jpg"
             alt="personal photo"
@@ -138,23 +144,23 @@
             height="305"
           />
         </div>
-        <section id="about" class="cv__aside-section section">
+        <section id="about" class="aside__section section">
           <h2 class="section__title">About me:</h2>
-          <p class="section__text">
+          <p class="section__text section__text_first-letter-hightlight">
             I enjoy learning Frontend Development and making my own projects.
           </p>
-          <p class="section__text">
+          <p class="section__text section__text_first-letter-hightlight">
             My goal is to become an excellent specialist, to know all the
             details in my working area and to create interesting and amazing
             works.
           </p>
-          <p class="section__text">
+          <p class="section__text section__text_first-letter-hightlight">
             I am purposeful, responsible, learn quickly and enjoy constantly
             learning something new and easily find a common language with
             different people.
           </p>
         </section>
-        <section id="contacts" class="cv__aside-section section">
+        <section id="contacts" class="aside__section section">
           <h2 class="section__title">Contacts:</h2>
           <ul class="section__contacts-list">
             <li>
@@ -194,8 +200,8 @@
         </section>
       </aside>
 
-      <main class="cv__main">
-        <section id="skills" class="cv_main-section section">
+      <main class="cv__main main">
+        <section id="skills" class="main__section section">
           <h2 class="section__title">Skills:</h2>
           <ul class="section__skills-list">
             <li>
@@ -398,14 +404,14 @@
             </li>
           </ul>
         </section>
-        <section id="code" class="cv_main-section section">
+        <section id="code" class="main__section section">
           <h2 class="section__title">Code example:</h2>
           <pre class="section__code"><code>function factorial(number) {
 <!--     -->  if (number == 0 || number == 1) return 1;
 <!--     -->  return factorial(number - 1) * number;
 <!--     -->}</code></pre>
         </section>
-        <section id="courses" class="cv_main-section section">
+        <section id="courses" class="main__section section">
           <h2 class="section__title">Education and courses:</h2>
           <ul class="section__list">
             <li>
@@ -429,7 +435,7 @@
             </li>
           </ul>
         </section>
-        <section id="languages" class="cv_main-section section">
+        <section id="languages" class="main__section section">
           <h2 class="section__title">Language:</h2>
           <p class="section__text">My English level is B2.</p>
           <ul class="section__list">

@@ -1,0 +1,107 @@
+.section {
+  padding: 0 15px;
+}
+
+.section__title {
+  font-family: "PT Serif", serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.section__text {
+  margin-top: 20px;
+
+  line-height: 1.8;
+}
+
+.section__text_first-letter-hightlight::first-letter {
+  font-family: "PT Serif", serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #3813c2;
+}
+
+.section__contacts-list,
+.section__contacts-list li + li {
+  margin-top: 15px;
+}
+
+.section__contacts-list a {
+  display: inline-block;
+
+  vertical-align: middle;
+  line-height: 2;
+}
+
+.section__contacts-list a:hover img {
+  transform: scale(1.4);
+}
+
+.section__contacts-list img {
+  margin-right: 5px;
+
+  vertical-align: middle;
+
+  transition: transform 0.4s ease-in-out;
+}
+
+.section__skills-list {
+  margin-top: 15px;
+
+  text-align: center;
+}
+
+.section__skills-list li {
+  display: inline-block;
+  margin: 20px 10px;
+  padding: 5px;
+
+  transition: transform 0.4s ease-in-out;
+}
+
+.section__skills-list li:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+  transform: translateY(-10px) scale(1.4);
+}
+
+.section__skills-list figure {
+  text-align: center;
+}
+
+.section__skills-list figcaption {
+  margin-top: 5px;
+}
+
+.section__code {
+  margin-top: 15px;
+  padding: 5px;
+
+  font-family: "Source Code Pro", monospace;
+  line-height: 1.8;
+
+  background-color: #ebe6e6;
+
+  overflow: auto;
+}
+
+.section__list {
+  margin-top: 15px;
+  margin-left: 30px;
+
+  line-height: 1.8;
+
+  list-style-type: square;
+}
+
+.section__list li + li {
+  margin-top: 15px;
+}
+
+@media (min-width: 670px) {
+  .section__title {
+    padding-bottom: 5px;
+
+    border-bottom: 2px solid #ff6fd8;
+  }
+}

@@ -1,0 +1,91 @@
+:root {
+  font-size: 1em;
+
+  cursor: url("../images/cur/cur-default.cur"), default;
+
+  scroll-behavior: smooth;
+  /*место для светлой темы*/
+}
+
+body {
+  padding: 20px;
+
+  font-family: "PT Sans", sans-serif;
+
+  background-image: linear-gradient(135deg, #ff6fd8 10%, #3813c2 100%);
+
+  overflow-x: hidden;
+}
+
+body.dark {
+  /*место для тёмной темы*/
+}
+
+a {
+  color: #0000ff;
+  cursor: url("../images/cur/cur-pointer.cur"), pointer;
+}
+
+a:visited {
+  color: #f609f6;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+a:active {
+  color: #ff7300;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #f3d6d1 0, #ccc8c7, #f3d6d1);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #918f8f;
+  border-radius: 16px;
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.5),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.5);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6d6c6c;
+}
+
+.cv {
+  position: relative;
+
+  background-color: #ffffff;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.cv_s {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+@media (min-width: 670px) {
+  .cv__aside {
+    position: absolute;
+    left: 20px;
+    top: 80px;
+
+    width: 265px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    background-color: #ffffff;
+    box-shadow: 2px 2px 10px #ff6fd8;
+  }
+
+  .cv__main {
+    padding-left: 305px;
+  }
+}
