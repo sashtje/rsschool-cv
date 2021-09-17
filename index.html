@@ -155,7 +155,7 @@
             <h2 class="section__title">Contacts:</h2>
             <ul class="section__contacts-list">
               <li>
-                <a href="mailto:sashtje.lefevre@gmail.com">
+                <a href="mailto:sashtje.lefevre@gmail.com" target="_blank">
                   <img
                     src="images/icons/email.svg"
                     alt="email icon"
@@ -527,10 +527,30 @@
 
         <section id="code" class="main__section section">
           <h2 class="section__title">Code example:</h2>
-          <pre class="section__code"><code>function factorial(number) {
-<!--     -->  if (number == 0 || number == 1) return 1;
-<!--     -->  return factorial(number - 1) * number;
-<!--     -->}</code></pre>
+
+          <p class="section__text section__text_first-letter-hightlight">My solution of <a href="https://www.codewars.com/kata/reverse-or-rotate" target="_blank">"Reverse or rotate?"</a> kata from <strong>codewars.com</strong></p>
+
+          <pre class="section__code"><code>function revrot(str, sz) {
+  if (str == '' || sz = 0 || sz > str.length) return "";
+
+  let arr = [];
+  let count = Math.floor(str.length / sz);
+  let resultStr = '';
+  
+  for (let i = 0; i < count; i++)
+    arr.push(str.substr(i * sz, sz));
+  
+  for (let i = 0; i < arr.length; i++)
+    {
+      let sumCubes = arr[i].split('').reduce(function(sum, item) {
+        return sum + Math.pow(Number(item), 3);
+      }, 0);
+      
+      if (sumCubes % 2 == 0) resultStr += arr[i].split('').reverse().join('');
+      else resultStr += arr[i].replace(/^(\d)(\d*)$/, '$2$1');
+    } 
+  return resultStr;
+}</code></pre>
         </section>
 
         <section id="projects" class="main__section section">

@@ -86,7 +86,7 @@
 
 .section__code {
   margin-top: 15px;
-  padding: 5px;
+  padding: 5px 10px;
 
   font-family: "Source Code Pro", monospace;
   line-height: 1.8;
