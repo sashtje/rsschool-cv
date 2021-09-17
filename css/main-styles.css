@@ -89,3 +89,19 @@ a:active {
     padding-left: 305px;
   }
 }
+
+@media (min-width: 800px) and (min-height: 800px) {
+  .cv__aside {
+    position: sticky;
+    top: 74px;
+    left: 0;
+  }
+
+  .cv__aside-container {
+    position: absolute;
+    left: 20px;
+    top: 105px;
+    width: 270px;
+    height: calc(100% - 174px);
+  }
+}
