@@ -45,9 +45,89 @@
   <body>
     <div class="cv cv_s">
       <header class="header">
-        <h1 class="header__title">Sashtje Lefevre</h1>
-        <p class="header__subtitle">Junior Frontend Developer</p>
+        <a class="header__logo" href="index.html"
+          ><img src="images/logo.svg" width="40" height="43" alt="logo"></a>
+
+        <button class="header__btn btn-switch-theme" id="btn-switch-theme">
+          <img class="btn-switch-theme__moon" src="images/icons/moon.svg" width="30" height="30" alt="dark-mode"/>
+          <img class="btn-switch-theme__sun" src="images/icons/sun.svg" width="30" height="30" alt="light-mode"/>
+        </button>
+
+        <nav class="header__menu menu" id="main-menu">
+          <button class="header__btn burger" id="burger">
+            Menu <span class="burger__center-stick"></span>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#about" class="menu__link">
+                <span class="menu__icon"><svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M13 14s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002.002zM3.022 13h9.956a.274.274 0 0 0 .014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 0 0 .022.004zm9.974.056v-.002.002zM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                </svg></span>About
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#skills" class="menu__link">
+                <span class="menu__icon"><svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M15 13H1v2h14v-2zM1 12a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H1zm14-5H1v2h14V7zM1 6a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H1z"/>
+                  <path fill-rule="evenodd" d="M13 10H3v2h10v-2zM3 9a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3zm10-5H3v2h10V4zM3 3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3z"/>
+                  <path fill-rule="evenodd" d="M15 1H1v2h14V1zM1 0a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1z"/>
+                  <path fill-rule="evenodd" d="M5.5 1v2h-1V1h1zm6 0v2h-1V1h1zm-4 5V4h1v2h-1zm-2 1v2h-1V7h1zm6 0v2h-1V7h1zm-4 5v-2h1v2h-1zm-3 3v-2h1v2h-1zm6 0v-2h1v2h-1z"/>
+                </svg></span>Skills
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#code" class="menu__link">
+                <span class="menu__icon"><svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                  <path fill-rule="evenodd" d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
+                </svg></span>Code
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#projects" class="menu__link">
+                <span class="menu__icon"><svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6h-1v6a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-6H0v6z"/>
+                  <path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v2.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 6.884V4.5zM1.5 4a.5.5 0 0 0-.5.5v1.616l6.871 1.832a.5.5 0 0 0 .258 0L15 6.116V4.5a.5.5 0 0 0-.5-.5h-13zM5 2.5A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"/>
+                </svg></span>Projects
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#video" class="menu__link">
+                <span class="menu__icon"><svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0h8v6H4V1zm8 8H4v6h8V9zM1 1h2v2H1V1zm2 3H1v2h2V4zM1 7h2v2H1V7zm2 3H1v2h2v-2zm-2 3h2v2H1v-2zM15 1h-2v2h2V1zm-2 3h2v2h-2V4zm2 3h-2v2h2V7zm-2 3h2v2h-2v-2zm2 3h-2v2h2v-2z"/>
+                </svg></span>Video
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#courses" class="menu__link">
+                <span class="menu__icon"><svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 0 1 8.5 2.5v11a.5.5 0 0 1-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 0 1 0 13.5v-11a.5.5 0 0 1 .276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 0 1 .22-.103 12.958 12.958 0 0 1 2.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 0 0 1 2.82z"/>
+                  <path fill-rule="evenodd" d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 0 0 7.5 2.5v11a.5.5 0 0 0 .854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 0 0-.799-.34 12.96 12.96 0 0 0-2.073-.609zM15 2.82v9.908c-.846-.343-1.944-.672-3.074-.788-1.143-.118-2.387-.023-3.426.56V2.718c1.063-.929 2.631-.956 4.09-.664A11.956 11.956 0 0 1 15 2.82z"/>
+                </svg></span>Courses
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#languages" class="menu__link">
+                <span class="menu__icon"><svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1.018 7.5h2.49c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5zM2.255 4H4.09a9.266 9.266 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.024 7.024 0 0 0 2.255 4zM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm-.5 1.077c-.67.204-1.335.82-1.887 1.855-.173.324-.33.682-.468 1.068H7.5V1.077zM7.5 5H4.847a12.5 12.5 0 0 0-.338 2.5H7.5V5zm1 2.5V5h2.653c.187.765.306 1.608.338 2.5H8.5zm-1 1H4.51a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm1 2.5V8.5h2.99a12.495 12.495 0 0 1-.337 2.5H8.5zm-1 1H5.145c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12zm-2.173 2.472a6.695 6.695 0 0 1-.597-.933A9.267 9.267 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM1.674 11H3.82a13.651 13.651 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm8.999 3.472A7.024 7.024 0 0 0 13.745 12h-1.834a9.278 9.278 0 0 1-.641 1.539 6.688 6.688 0 0 1-.597.933zM10.855 12H8.5v2.923c.67-.204 1.335-.82 1.887-1.855A7.98 7.98 0 0 0 10.855 12zm1.325-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm.312-3.5h2.49a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.91 4a9.277 9.277 0 0 0-.64-1.539 6.692 6.692 0 0 0-.597-.933A7.024 7.024 0 0 1 13.745 4h-1.834zm-1.055 0H8.5V1.077c.67.204 1.335.82 1.887 1.855.173.324.33.682.468 1.068z"/>
+                </svg></span>Languages
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#contacts" class="menu__link">
+                <span class="menu__icon"><svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                </svg></span>Contacts
+              </a>
+            </li>
+          </ul>
+        </nav>
       </header>
+
+      <section class="welcome">
+        <h1 class="welcome__title">Sashtje Lefevre</h1>
+        <p class="welcome__subtitle">Junior Frontend Developer</p>
+      </section>
 
       <aside class="cv__aside">
         <div class="cv__photo">
@@ -58,8 +138,8 @@
             height="305"
           />
         </div>
-        <section class="cv__aside-section section">
-          <h2 class="section__title">About myself:</h2>
+        <section id="about" class="cv__aside-section section">
+          <h2 class="section__title">About me:</h2>
           <p class="section__text">
             I enjoy learning Frontend Development and making my own projects.
           </p>
@@ -74,7 +154,7 @@
             different people.
           </p>
         </section>
-        <section class="cv__aside-section section">
+        <section id="contacts" class="cv__aside-section section">
           <h2 class="section__title">Contacts:</h2>
           <ul class="section__contacts-list">
             <li>
@@ -115,7 +195,7 @@
       </aside>
 
       <main class="cv__main">
-        <section class="cv_main-section section">
+        <section id="skills" class="cv_main-section section">
           <h2 class="section__title">Skills:</h2>
           <ul class="section__skills-list">
             <li>
@@ -318,14 +398,14 @@
             </li>
           </ul>
         </section>
-        <section class="cv_main-section section">
+        <section id="code" class="cv_main-section section">
           <h2 class="section__title">Code example:</h2>
           <pre class="section__code"><code>function factorial(number) {
 <!--     -->  if (number == 0 || number == 1) return 1;
 <!--     -->  return factorial(number - 1) * number;
 <!--     -->}</code></pre>
         </section>
-        <section class="cv_main-section section">
+        <section id="courses" class="cv_main-section section">
           <h2 class="section__title">Education and courses:</h2>
           <ul class="section__list">
             <li>
@@ -349,7 +429,7 @@
             </li>
           </ul>
         </section>
-        <section class="cv_main-section section">
+        <section id="languages" class="cv_main-section section">
           <h2 class="section__title">Language:</h2>
           <p class="section__text">My English level is B2.</p>
           <ul class="section__list">
@@ -408,5 +488,7 @@
         /></a>
       </footer>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
