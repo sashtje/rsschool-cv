@@ -6,6 +6,8 @@
 
   let btnSwitchTheme = document.getElementById("btn-switch-theme");
   let body = document.getElementsByTagName("body")[0];
+
+  let personalPhoto = document.getElementById("personal-photo");
   //=============================================================================================
 
   burger.addEventListener("click", function (event) {
@@ -25,5 +27,25 @@
   btnSwitchTheme.addEventListener("click", function () {
     body.classList.toggle("dark");
   }); //end addEventListener
+
+  //=============================================================================================
+
+  let animationIsPlaying = false;
+
+  personalPhoto.addEventListener("click", function () {
+    if (this.classList.contains("photo__photo-wrapper_is-rotated")) {
+      return;
+    }
+    this.classList.add("photo__photo-wrapper_is-rotated");
+  }); //end addEventListener
+
+  personalPhoto.addEventListener("animationstart", function () {
+    animationIsPlaying = true;
+  });
+
+  personalPhoto.addEventListener("animationend", function () {
+    animationIsPlaying = false;
+    personalPhoto.classList.remove("photo__photo-wrapper_is-rotated");
+  });
   //===
 })();

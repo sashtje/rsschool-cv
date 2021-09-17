@@ -231,6 +231,7 @@
   min-width: 200px;
   transition: 0.4s;
   overflow: hidden;
+  z-index: 1;
 }
 
 .menu_is-open .menu__list {
