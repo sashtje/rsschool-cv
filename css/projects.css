@@ -1,0 +1,33 @@
+.projects {
+}
+.projects__item {
+}
+.project-item {
+}
+.project-item__title {
+}
+.project-item__photo-block {
+}
+.project-item__photo {
+}
+.project-item__stack {
+}
+.project-item__description {
+}
+
+.projects__delimiter {
+  padding: 30px 0;
+}
+
+.projects__delimiter hr {
+  width: 30%;
+  height: 3px;
+  border: none;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #3813c2 10%, #ff6fd8 100%);
+  transition: 0.5s;
+}
+
+.projects__delimiter:hover hr {
+  width: 100%;
+}

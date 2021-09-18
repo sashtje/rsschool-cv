@@ -93,6 +93,10 @@
   overflow: auto;
 }
 
+.section__projects {
+  margin-top: 20px;
+}
+
 .section__list {
   margin-top: 15px;
   margin-left: 30px;
