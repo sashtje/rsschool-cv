@@ -27,6 +27,15 @@
   color: #8906bd;
 }
 
+.section__text_lang-highlight {
+  color: #3813c2;
+  font-weight: bold;
+}
+
+.section__text_lang-underline {
+  text-decoration: underline;
+}
+
 .section__text-smile {
   font-weight: normal;
   color: #b700ff;
@@ -45,6 +54,26 @@
   width: 100%;
   height: 100%;
   display: block;
+}
+
+/* .section__details .section__list {
+  transition: 1s;
+} */
+
+.section__details[open] .section__list {
+  animation: spoiler 1s;
+}
+@keyframes spoiler {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.section__summary {
+  cursor: url("../images/cur/cur-pointer.cur"), pointer;
 }
 
 .section__contacts-list,
@@ -123,6 +152,11 @@
 
 .section__list li + li {
   margin-top: 15px;
+}
+
+.section__list-sertificates-block img {
+  max-width: 100%;
+  margin-top: 10px;
 }
 
 @media (min-width: 670px) {

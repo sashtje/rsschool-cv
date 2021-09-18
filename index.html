@@ -533,16 +533,16 @@
           <p class="section__text section__text_first-letter-hightlight">My solution of <a href="https://www.codewars.com/kata/reverse-or-rotate" target="_blank">"Reverse or rotate?"</a> kata from <strong>codewars.com</strong></p>
 
           <pre class="section__code"><code>function revrot(str, sz) {
-  if (str == '' || sz = 0 || sz > str.length) return "";
+  if (str == '' || sz = 0 || sz &gt; str.length) return "";
 
   let arr = [];
   let count = Math.floor(str.length / sz);
   let resultStr = '';
   
-  for (let i = 0; i < count; i++)
+  for (let i = 0; i &lt; count; i++)
     arr.push(str.substr(i * sz, sz));
   
-  for (let i = 0; i < arr.length; i++)
+  for (let i = 0; i &lt; arr.length; i++)
     {
       let sumCubes = arr[i].split('').reduce(function(sum, item) {
         return sum + Math.pow(Number(item), 3);
@@ -816,36 +816,49 @@
         </section>
 
         <section id="languages" class="main__section section">
-          <h2 class="section__title">Language:</h2>
-          <p class="section__text">My English level is B2.</p>
-          <ul class="section__list">
-            <li>
-              I have <strong>4 sertificates</strong> in the
-              <a
-                href="https://play.google.com/store/apps/details?id=ru.zengalt.simpler&hl=ru&gl=US"
-                target="_blank"
-                >Simpler app</a
-              >
-              from Elementary to Upper-Intermediate.
-            </li>
-            <li>
-              On
-              <a href="https://www.duolingo.com/" target="_blank"
-                >Duolingo.com</a
-              >
-              my current score is <strong>41 550</strong>.
-            </li>
-            <li>
-              I have <strong>video calls experience</strong> with native
-              speakers.
-            </li>
-            <li>
-              <strong>I adore English</strong>, love to read
-              <a href="https://medium.com/" target="_blank">Medium.com</a>,
-              books and programming articles.
-            </li>
-            <li>I like to watch different kinds of videos in English.</li>
-          </ul>
+          <h2 class="section__title">Languages:</h2>
+
+          <p class="section__text section__text_lang-highlight">Russian is native.</p>
+
+          <details class="section__details">
+            <summary class="section__summary section__text section__text_lang-highlight">English is B2+.</summary>
+            <ul class="section__list">
+              <li>
+                I have <strong>4 sertificates</strong> in the
+                <a
+                  href="https://play.google.com/store/apps/details?id=ru.zengalt.simpler&hl=ru&gl=US"
+                  target="_blank"
+                  >Simpler app</a
+                >
+                from Elementary to Upper-Intermediate: 
+                <div class="section__list-sertificates-block">
+                  <img src="images/simpler/elementary.png" alt="elementary">
+                  <img src="images/simpler/pre-intermediate.png" alt="pre-intermediate">
+                  <img src="images/simpler/intermediate.png" alt="intermediate">
+                  <img src="images/simpler/upper-intermediate.png" alt="upper-intermediate">
+                </div>
+              </li>
+              <li>
+                On
+                <a href="https://www.duolingo.com/profile/RoboOwl" target="_blank"
+                  >Duolingo.com</a
+                >
+                my current score is <strong>42 816</strong>.
+              </li>
+              <li>
+                I have <strong>video calls experience</strong> with native
+                speakers.
+              </li>
+              <li>
+                <strong>I adore English</strong>, love to read
+                <a href="https://medium.com/" target="_blank">Medium.com</a>,
+                books and programming articles.
+              </li>
+              <li>I like to watch different kinds of videos in English.</li>
+            </ul>
+          </details>
+
+          <p class="section__text section__text_lang-highlight">Dutch is A1.</p>
         </section>
       </main>
 
