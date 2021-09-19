@@ -47,5 +47,34 @@
     animationIsPlaying = false;
     personalPhoto.classList.remove("photo__photo-wrapper_is-rotated");
   });
+
+  //=============================================================================================
+  let btnScrollTop = document.getElementById("btn-scroll-top");
+
+  document.addEventListener("scroll", function () {
+    if (
+      document.body.scrollTop > 100 ||
+      document.documentElement.scrollTop > 100
+    ) {
+      btnScrollTop.style.display = "block";
+    } else {
+      btnScrollTop.style.display = "none";
+    }
+  }); //end addEventListener
+
+  btnScrollTop.addEventListener("click", function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }); //end addEventListener
+
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    btnScrollTop.style.display = "block";
+  } else {
+    btnScrollTop.style.display = "none";
+  }
+
   //===
 })();

@@ -71,6 +71,36 @@ a:active {
   max-width: 900px;
 }
 
+.cv__btn-scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  left: 30px;
+  background: initial;
+  border: none;
+  outline: none;
+  cursor: url("../images/cur/cur-pointer.cur"), pointer;
+  z-index: 99;
+}
+
+.cv__btn-scroll-to-top svg {
+  width: 40px;
+  height: 40px;
+  fill: #f609f6;
+  transition: 1s;
+}
+
+.cv__btn-scroll-to-top:hover svg {
+  fill: #0000ff;
+}
+
+@media (min-width: 901px) {
+  .cv__btn-scroll-to-top {
+    bottom: 35px;
+    left: calc(50% - 300px);
+  }
+}
+
 @media (min-width: 670px) {
   .cv__aside {
     position: absolute;
