@@ -1,3 +1,11 @@
+.aside {
+  background-color: #ffffff;
+}
+
+.dark .aside {
+  background: url("../images/other-images/bg-dark-4766.png");
+}
+
 .aside__photo {
   margin-top: 10px;
 }
@@ -55,6 +63,14 @@
 
 .aside__sashtje-photo:hover {
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.dark .aside__sashtje-photo {
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
+}
+
+.dark .aside__sashtje-photo:hover {
+  box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.2);
 }
 
 .aside__easter-egg-photo:hover {

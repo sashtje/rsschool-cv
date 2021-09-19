@@ -11,12 +11,20 @@
   color: #3813c2;
 }
 
+.dark .welcome__title {
+  color: #9b9b9b;
+}
+
 .welcome__subtitle {
   margin-top: 10px;
 
   font-style: italic;
   font-size: 1.3rem;
   color: #db62f3;
+}
+
+.dark .welcome__subtitle {
+  color: #a3a604;
 }
 
 @media (min-width: 670px) {
@@ -26,6 +34,10 @@
     text-align: left;
 
     background-color: #f3f3f3;
+  }
+
+  .dark .welcome {
+    background-color: #474242;
   }
 
   .welcome__title {

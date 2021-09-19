@@ -258,7 +258,21 @@
 .menu__link:hover {
   color: #ffffff;
 }
+
 .menu__link:active {
+  color: #eaee09;
+}
+
+.dark .menu__link {
+  color: #ffffff;
+}
+
+.dark .menu__link:visited,
+.menu__link:hover {
+  color: #ffffff;
+}
+
+.dark .menu__link:active {
   color: #eaee09;
 }
 

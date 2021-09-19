@@ -32,4 +32,8 @@
 
     background-color: #f3f3f3;
   }
+
+  .dark .footer {
+    background-color: #474242;
+  }
 }

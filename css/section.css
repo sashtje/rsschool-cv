@@ -21,15 +21,27 @@
   color: #3813c2;
 }
 
+.dark .section__text_first-letter-hightlight::first-letter {
+  color: #9f8762;
+}
+
 .section__text_color-hightlight {
   font-weight: bold;
   font-size: 1.1rem;
   color: #8906bd;
 }
 
+.dark .section__text_color-hightlight {
+  color: #9f8762;
+}
+
 .section__text_lang-highlight {
   color: #3813c2;
   font-weight: bold;
+}
+
+.dark .section__text_lang-highlight {
+  color: #9f8762;
 }
 
 .section__text_lang-underline {
@@ -39,6 +51,10 @@
 .section__text-smile {
   font-weight: normal;
   color: #b700ff;
+}
+
+.dark .section__text-smile {
+  color: #9f8762;
 }
 
 .section__video {
@@ -55,10 +71,6 @@
   height: 100%;
   display: block;
 }
-
-/* .section__details .section__list {
-  transition: 1s;
-} */
 
 .section__details[open] .section__list {
   animation: spoiler 1s;
@@ -164,5 +176,9 @@
     padding-bottom: 5px;
 
     border-bottom: 2px solid #ff6fd8;
+  }
+
+  .dark .section__title {
+    border-bottom-color: #a3a604;
   }
 }

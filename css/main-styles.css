@@ -19,6 +19,8 @@ body {
 
 body.dark {
   /*место для тёмной темы*/
+  color: #9b9b9b;
+  background: #000000;
 }
 
 a {
@@ -36,6 +38,26 @@ a:hover {
 
 a:active {
   color: #ff7300;
+}
+
+.dark a {
+  color: #8d8de0;
+}
+
+.dark a:visited {
+  color: #82852d;
+}
+
+.dark a:hover {
+  color: #f58181;
+}
+
+.dark a:active {
+  color: #f7b076;
+}
+
+.dark strong {
+  color: #835c5c;
 }
 
 /* Scrollbar */
@@ -66,6 +88,11 @@ a:active {
   box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.6);
 }
 
+.dark .cv {
+  background: url("../images/other-images/bg-dark-4766.png");
+  box-shadow: 3px 3px 10px rgb(255 255 255 / 40%);
+}
+
 .cv_s {
   margin: 0 auto;
   max-width: 900px;
@@ -94,6 +121,14 @@ a:active {
   fill: #0000ff;
 }
 
+.dark .cv__btn-scroll-to-top svg {
+  fill: #82852d;
+}
+
+.dark .cv__btn-scroll-to-top:hover svg {
+  fill: #f58181;
+}
+
 @media (min-width: 901px) {
   .cv__btn-scroll-to-top {
     bottom: 35px;
@@ -111,8 +146,11 @@ a:active {
     padding-top: 10px;
     padding-bottom: 20px;
 
-    background-color: #ffffff;
     box-shadow: 2px 2px 10px #ff6fd8;
+  }
+
+  .dark .cv__aside {
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
   }
 
   .cv__main {
