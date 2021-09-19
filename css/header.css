@@ -246,6 +246,13 @@
   padding: 20px 30px;
 }
 
+@media (max-height: 550px) and (max-width: 799px) {
+  .menu_is-open .menu__list {
+    height: 200px;
+    overflow: auto;
+  }
+}
+
 .menu__item {
 }
 
@@ -299,7 +306,8 @@
     display: none;
   }
 
-  .menu__list {
+  .menu__list,
+  .menu_is-open .menu__list {
     position: initial;
     height: auto;
     display: flex;
@@ -307,6 +315,7 @@
     overflow: initial;
     background: transparent;
     box-shadow: none;
+    padding: 0;
   }
 
   .menu__item {
