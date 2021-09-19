@@ -1,8 +1,12 @@
 .header {
-  padding: 15px 5px 0 15px;
+  position: sticky;
+  top: 0;
+  padding: 15px 5px 15px 15px;
+  background-color: rgba(243, 243, 243, 0.5);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 .header__logo {
@@ -274,11 +278,6 @@
 }
 
 @media (min-width: 800px) {
-  .header {
-    background-color: #f3f3f3;
-    padding: 15px 15px 0 15px;
-  }
-
   .burger {
     display: none;
   }
@@ -358,27 +357,11 @@
   }
 }
 
-@media (min-width: 670px) {
-  .header {
-    background-color: #f3f3f3;
-  }
-}
-
 @keyframes item-appearance {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
-  }
-}
-
-@media (min-width: 800px) and (min-height: 800px) {
-  .header {
-    position: sticky;
-    top: 0px;
-    background-color: rgba(243, 243, 243, 0.5);
-    padding: 15px;
-    z-index: 1;
   }
 }
