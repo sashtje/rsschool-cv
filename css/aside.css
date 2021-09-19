@@ -1,5 +1,6 @@
 .aside {
   background-color: #ffffff;
+  transition: 1s;
 }
 
 .dark .aside {

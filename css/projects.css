@@ -1,18 +1,10 @@
-.projects {
-}
-
-.projects__item {
-}
-
-.project-item {
-}
-
 .project-item__title {
   font-family: "PT Serif", serif;
   font-size: 1.2rem;
   color: #3813c2;
   font-weight: bold;
   margin-bottom: 20px;
+  transition: 1s;
 }
 
 .dark .project-item__title {
@@ -23,6 +15,7 @@
   display: block;
   padding: 5px;
   box-shadow: 2px 2px 15px rgba(255, 111, 216, 1);
+  transition: 1s;
 }
 
 .project-item__photo-wrapper {
@@ -81,6 +74,7 @@
   font-size: 1.3rem;
   font-weight: bold;
   color: #3813c2;
+  transition: 1s;
 }
 
 .dark .project-item__description_first-letter-hightlight::first-letter {

@@ -15,6 +15,8 @@ body {
   background-image: linear-gradient(135deg, #ff6fd8 10%, #3813c2 100%);
 
   overflow-x: hidden;
+
+  transition: 1s;
 }
 
 body.dark {
@@ -26,6 +28,7 @@ body.dark {
 a {
   color: #0000ff;
   cursor: url("../images/cur/cur-pointer.cur"), pointer;
+  transition: 1s;
 }
 
 a:visited {
@@ -58,6 +61,7 @@ a:active {
 
 .dark strong {
   color: #835c5c;
+  transition: 1s;
 }
 
 /* Scrollbar */
@@ -86,6 +90,7 @@ a:active {
 
   background-color: #ffffff;
   box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.6);
+  transition: 1s;
 }
 
 .dark .cv {
@@ -147,6 +152,7 @@ a:active {
     padding-bottom: 20px;
 
     box-shadow: 2px 2px 10px #ff6fd8;
+    transition: 1s;
   }
 
   .dark .cv__aside {

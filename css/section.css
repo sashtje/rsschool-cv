@@ -19,6 +19,7 @@
   font-size: 1.3rem;
   font-weight: bold;
   color: #3813c2;
+  transition: 1s;
 }
 
 .dark .section__text_first-letter-hightlight::first-letter {
@@ -29,6 +30,7 @@
   font-weight: bold;
   font-size: 1.1rem;
   color: #8906bd;
+  transition: 1s;
 }
 
 .dark .section__text_color-hightlight {
@@ -38,6 +40,7 @@
 .section__text_lang-highlight {
   color: #3813c2;
   font-weight: bold;
+  transition: 1s;
 }
 
 .dark .section__text_lang-highlight {
@@ -51,6 +54,7 @@
 .section__text-smile {
   font-weight: normal;
   color: #b700ff;
+  transition: 1s;
 }
 
 .dark .section__text-smile {
@@ -176,6 +180,7 @@
     padding-bottom: 5px;
 
     border-bottom: 2px solid #ff6fd8;
+    transition: 1s;
   }
 
   .dark .section__title {
