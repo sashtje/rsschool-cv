@@ -1,0 +1,181 @@
+:root {
+  font-size: 1em;
+
+  cursor: url("../images/cur/cur-default.cur"), default;
+
+  scroll-behavior: smooth;
+  /*место для светлой темы*/
+}
+
+body {
+  padding: 20px;
+
+  font-family: "PT Sans", sans-serif;
+
+  background-image: linear-gradient(135deg, #ff6fd8 10%, #3813c2 100%);
+
+  overflow-x: hidden;
+
+  transition: 1s;
+}
+
+body.dark {
+  /*место для тёмной темы*/
+  color: #9b9b9b;
+  background: #000000;
+}
+
+a {
+  color: #0000ff;
+  cursor: url("../images/cur/cur-pointer.cur"), pointer;
+  transition: 0.5s;
+}
+
+a:visited {
+  color: #f609f6;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+a:active {
+  color: #ff7300;
+}
+
+.dark a {
+  color: #8d8de0;
+}
+
+.dark a:visited {
+  color: #82852d;
+}
+
+.dark a:hover {
+  color: #f58181;
+}
+
+.dark a:active {
+  color: #f7b076;
+}
+
+.dark strong {
+  color: #835c5c;
+  transition: 1s;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #f3d6d1 0, #ccc8c7, #f3d6d1);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #918f8f;
+  border-radius: 16px;
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.5),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.5);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6d6c6c;
+}
+
+.cv {
+  position: relative;
+
+  background-color: #ffffff;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.6);
+  transition: 1s;
+}
+
+.dark .cv {
+  background: url("../images/other-images/bg-dark-4766.png");
+  box-shadow: 3px 3px 10px rgb(255 255 255 / 40%);
+}
+
+.cv_s {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.cv__btn-scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  left: 30px;
+  background: initial;
+  border: none;
+  outline: none;
+  cursor: url("../images/cur/cur-pointer.cur"), pointer;
+  z-index: 99;
+}
+
+.cv__btn-scroll-to-top svg {
+  width: 40px;
+  height: 40px;
+  fill: #f609f6;
+  transition: 1s;
+}
+
+.cv__btn-scroll-to-top:hover svg {
+  fill: #0000ff;
+}
+
+.dark .cv__btn-scroll-to-top svg {
+  fill: #82852d;
+}
+
+.dark .cv__btn-scroll-to-top:hover svg {
+  fill: #f58181;
+}
+
+@media (min-width: 901px) {
+  .cv__btn-scroll-to-top {
+    bottom: 35px;
+    left: calc(50% - 300px);
+  }
+}
+
+@media (min-width: 670px) {
+  .cv__aside {
+    position: absolute;
+    left: 20px;
+    top: 80px;
+
+    width: 265px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    box-shadow: 2px 2px 10px #ff6fd8;
+    transition: 1s;
+  }
+
+  .dark .cv__aside {
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+  }
+
+  .cv__main {
+    padding-left: 305px;
+  }
+}
+
+@media (min-width: 800px) and (min-height: 800px) {
+  .cv__aside {
+    position: sticky;
+    top: 74px;
+    left: 0;
+  }
+
+  .cv__aside-container {
+    position: absolute;
+    left: 20px;
+    top: 105px;
+    width: 270px;
+    height: calc(100% - 174px);
+  }
+}

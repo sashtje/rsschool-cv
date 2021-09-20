@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  margin-top: 35px;
+  padding: 10px 5px 20px 5px;
+  align-items: center;
+  justify-content: space-between;
+
+  perspective: 100em;
+}
+
+.footer__github,
+.footer__copyright,
+.footer__rsschool {
+  transition: transform 1s ease-in-out;
+}
+
+.footer__github:hover {
+  transform: rotateY(360deg);
+}
+
+.footer__copyright:hover {
+  transform: rotateY(360deg) scale(2);
+}
+
+.footer__rsschool:hover {
+  transform: rotateY(-360deg);
+}
+
+@media (min-width: 670px) {
+  .footer {
+    padding: 10px 35px 20px 35px;
+
+    background-color: #f3f3f3;
+    transition: 1s;
+  }
+
+  .dark .footer {
+    background-color: #474242;
+  }
+}

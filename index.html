@@ -1,214 +1,900 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sashtje Lefevre | CV</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sashtje Lefevre 💻 Frontend Developer</title>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="images/favicon/site.webmanifest">
-  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#cb2424">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="images/favicon/safari-pinned-tab.svg"
+      color="#cb2424"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ff6fd8" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;&family=PT+Serif:wght@700&family=Source+Code+Pro&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;&family=PT+Serif:wght@700&family=Source+Code+Pro&display=swap"
+    />
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div class="cv cv_s">
-    <header class="header">
-      <h1 class="header__title">Sashtje Lefevre</h1>
-      <p class="header__subtitle">Junior Frontend Developer</p>
-    </header>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/highlight-code-gradient.css">
+    <link rel="stylesheet" href="css/main-styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="cv cv_s">
+      <header class="header">
+        <a class="header__logo" href="index.html"
+          ><img src="images/logo.svg" width="40" height="43" alt="logo"></a>
 
-    <aside class="cv__aside">
-      <div class="cv__photo">
-        <img src="images/sashtje.jpg" alt="personal photo" width="200" height="305">
+        <button class="header__btn btn-switch-theme" id="btn-switch-theme">
+          <img class="btn-switch-theme__moon" src="images/icons/moon.svg" width="30" height="30" alt="dark-mode"/>
+          <img class="btn-switch-theme__sun" src="images/icons/sun.svg" width="30" height="30" alt="light-mode"/>
+        </button>
+
+        <nav class="header__menu menu" id="main-menu">
+          <button class="header__btn burger" id="burger">
+            Menu <span class="burger__center-stick"></span>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#about" class="menu__link">
+                <span class="menu__icon"><svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M13 14s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002.002zM3.022 13h9.956a.274.274 0 0 0 .014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 0 0 .022.004zm9.974.056v-.002.002zM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                </svg></span>About
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#skills" class="menu__link">
+                <span class="menu__icon"><svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M15 13H1v2h14v-2zM1 12a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H1zm14-5H1v2h14V7zM1 6a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H1z"/>
+                  <path fill-rule="evenodd" d="M13 10H3v2h10v-2zM3 9a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3zm10-5H3v2h10V4zM3 3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3z"/>
+                  <path fill-rule="evenodd" d="M15 1H1v2h14V1zM1 0a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1z"/>
+                  <path fill-rule="evenodd" d="M5.5 1v2h-1V1h1zm6 0v2h-1V1h1zm-4 5V4h1v2h-1zm-2 1v2h-1V7h1zm6 0v2h-1V7h1zm-4 5v-2h1v2h-1zm-3 3v-2h1v2h-1zm6 0v-2h1v2h-1z"/>
+                </svg></span>Skills
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#code" class="menu__link">
+                <span class="menu__icon"><svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                  <path fill-rule="evenodd" d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
+                </svg></span>Code
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#projects" class="menu__link">
+                <span class="menu__icon"><svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6h-1v6a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-6H0v6z"/>
+                  <path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v2.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 6.884V4.5zM1.5 4a.5.5 0 0 0-.5.5v1.616l6.871 1.832a.5.5 0 0 0 .258 0L15 6.116V4.5a.5.5 0 0 0-.5-.5h-13zM5 2.5A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"/>
+                </svg></span>Projects
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#video" class="menu__link">
+                <span class="menu__icon"><svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0h8v6H4V1zm8 8H4v6h8V9zM1 1h2v2H1V1zm2 3H1v2h2V4zM1 7h2v2H1V7zm2 3H1v2h2v-2zm-2 3h2v2H1v-2zM15 1h-2v2h2V1zm-2 3h2v2h-2V4zm2 3h-2v2h2V7zm-2 3h2v2h-2v-2zm2 3h-2v2h2v-2z"/>
+                </svg></span>Video
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#courses" class="menu__link">
+                <span class="menu__icon"><svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 0 1 8.5 2.5v11a.5.5 0 0 1-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 0 1 0 13.5v-11a.5.5 0 0 1 .276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 0 1 .22-.103 12.958 12.958 0 0 1 2.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 0 0 1 2.82z"/>
+                  <path fill-rule="evenodd" d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 0 0 7.5 2.5v11a.5.5 0 0 0 .854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 0 0-.799-.34 12.96 12.96 0 0 0-2.073-.609zM15 2.82v9.908c-.846-.343-1.944-.672-3.074-.788-1.143-.118-2.387-.023-3.426.56V2.718c1.063-.929 2.631-.956 4.09-.664A11.956 11.956 0 0 1 15 2.82z"/>
+                </svg></span>Courses
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#languages" class="menu__link">
+                <span class="menu__icon"><svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1.018 7.5h2.49c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5zM2.255 4H4.09a9.266 9.266 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.024 7.024 0 0 0 2.255 4zM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm-.5 1.077c-.67.204-1.335.82-1.887 1.855-.173.324-.33.682-.468 1.068H7.5V1.077zM7.5 5H4.847a12.5 12.5 0 0 0-.338 2.5H7.5V5zm1 2.5V5h2.653c.187.765.306 1.608.338 2.5H8.5zm-1 1H4.51a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm1 2.5V8.5h2.99a12.495 12.495 0 0 1-.337 2.5H8.5zm-1 1H5.145c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12zm-2.173 2.472a6.695 6.695 0 0 1-.597-.933A9.267 9.267 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM1.674 11H3.82a13.651 13.651 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm8.999 3.472A7.024 7.024 0 0 0 13.745 12h-1.834a9.278 9.278 0 0 1-.641 1.539 6.688 6.688 0 0 1-.597.933zM10.855 12H8.5v2.923c.67-.204 1.335-.82 1.887-1.855A7.98 7.98 0 0 0 10.855 12zm1.325-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm.312-3.5h2.49a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.91 4a9.277 9.277 0 0 0-.64-1.539 6.692 6.692 0 0 0-.597-.933A7.024 7.024 0 0 1 13.745 4h-1.834zm-1.055 0H8.5V1.077c.67.204 1.335.82 1.887 1.855.173.324.33.682.468 1.068z"/>
+                </svg></span>Languages
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#contacts" class="menu__link">
+                <span class="menu__icon"><svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                </svg></span>Contacts
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="welcome">
+        <h1 class="welcome__title">Sashtje Lefevre</h1>
+        <p class="welcome__subtitle">Junior Frontend Developer</p>
+      </section>
+
+      <div class="cv__aside-container">
+        <aside class="cv__aside aside">
+          <div class="aside__photo">
+            <div class="aside__photo-container">
+              <div class="aside__photo-wrapper" id="personal-photo">
+                <img class="aside__personal-photo aside__easter-egg-photo" src="images/sashtje-easter-egg.jpg" alt="easter egg" width="200" height="305">
+                <img class="aside__personal-photo aside__sashtje-photo"
+                  src="images/sashtje.jpg"
+                  alt="personal photo"
+                  width="200"
+                  height="305"
+                />
+              </div>
+            </div>
+          </div>
+          
+          <section id="contacts" class="aside__section section">
+            <h2 class="section__title">Contacts:</h2>
+            <ul class="section__contacts-list">
+              <li>
+                <a href="mailto:sashtje.lefevre@gmail.com" target="_blank">
+                  <img
+                    src="images/icons/email.svg"
+                    alt="email icon"
+                    width="35"
+                    height="24"
+                  />
+                  sashtje.lefevre@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/sashtje" target="_blank">
+                  <img
+                    src="images/icons/github.svg"
+                    alt="github icon"
+                    width="35"
+                    height="35"
+                  />
+                  @sashtje
+                </a>
+              </li>
+              <li>
+                <a href="https://codepen.io/sashtje" target="_blank">
+                  <img
+                    src="images/icons/codepen.svg"
+                    alt="codepen icon"
+                    width="35"
+                    height="35"
+                  />
+                  @sashtje
+                </a>
+              </li>
+              <li>
+                <a href="https://discord.com/" target="_blank">
+                  <img
+                    src="images/icons/discord.svg"
+                    alt="discord icon"
+                    width="35"
+                    height="35"
+                  />
+                  Sashtje#0033
+                </a>
+              </li>
+            </ul>
+          </section>
+        </aside>
       </div>
-      <section class="cv__aside-section section">
-        <h2 class="section__title">About myself:</h2>
-        <p class="section__text">I enjoy learning Frontend Development and making my own projects.</p>
-        <p class="section__text">My goal is to become an excellent specialist, to know all the details in my working area and to create interesting and amazing works.</p>
-        <p class="section__text">I am purposeful, responsible, learn quickly and enjoy constantly learning something new and easily find a common language with different people.</p>
-      </section>
-      <section class="cv__aside-section section">
-        <h2 class="section__title">Contacts:</h2>
-        <ul class="section__contacts-list">
-          <li>
-            <a href="mailto:sashtje.lefevre@gmail.com">
-              <img src="images/icons/email.svg" alt="email icon" width="35" height="24"> sashtje.lefevre@gmail.com
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/sashtje" target="_blank">
-              <img src="images/icons/github.svg" alt="github icon" width="35" height="35"> @sashtje
-            </a>
-          </li>
-          <li>
-            <a href="https://codepen.io/sashtje" target="_blank">
-              <img src="images/icons/codepen.svg" alt="codepen icon" width="35" height="35"> @sashtje
-            </a>
-          </li>
-        </ul>
-      </section>
-    </aside>
 
-    <main class="cv__main">
-      <section class="cv_main-section section">
-        <h2 class="section__title">Skills:</h2>
-        <ul class="section__skills-list">
-          <li>
-            <figure>
-              <img src="images/icons/html5.svg" alt="html5 icon" width="35" height="35">
-              <figcaption>html5</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/icons/css-3.svg" alt="css3 icon" width="35" height="35">
-              <figcaption>css3</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/icons/sass.svg" alt="sass/scss icon" width="35" height="35">
-              <figcaption>sass/scss</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/icons/bootstrap.svg" alt="bootstrap icon" width="35" height="35">
-              <figcaption>bootstrap</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/icons/markdown.svg" alt="markdown icon" width="35" height="22">
-              <figcaption>markdown</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/icons/bem.svg" alt="bem icon" width="35" height="35">
-              <figcaption>bem</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/icons/prepros.png" alt="prepros icon" width="35" height="35">
-              <figcaption>prepros</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/icons/js.svg" alt="js icon" width="35" height="35">
-              <figcaption>js</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/icons/jquery.svg" alt="jquery icon" width="35" height="35">
-              <figcaption>jQuery</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/icons/sql.svg" alt="sql icon" width="35" height="35">
-              <figcaption>sql</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/icons/php.svg" alt="php icon" width="35" height="35">
-              <figcaption>php</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/icons/git.svg" alt="git icon" width="35" height="35">
-              <figcaption>git</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/icons/github.svg" alt="github icon" width="35" height="35">
-              <figcaption>GitHub</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/icons/sublime-text.svg" alt="sublime text icon" width="35" height="35">
-              <figcaption>Sublime Text</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/icons/visual-studio-code.svg" alt="vs code icon" width="35" height="35">
-              <figcaption>VS Code</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/icons/photoshop.svg" alt="photoshop icon" width="35" height="35">
-              <figcaption>photoshop</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/icons/figma.svg" alt="figma icon" width="35" height="35">
-              <figcaption>figma</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/icons/inkscape.svg" alt="inkscape icon" width="35" height="35">
-              <figcaption>inkscape</figcaption>
-            </figure>
-          </li>
-        </ul>
-      </section>
-      <section class="cv_main-section section">
-        <h2 class="section__title">Code example:</h2>
-        <pre class="section__code"><code>function factorial(number) {
-<!--     -->  if (number == 0 || number == 1) return 1;
-<!--     -->  return factorial(number - 1) * number;
-<!--     -->}</code></pre>
-      </section>
-      <section class="cv_main-section section">
-        <h2 class="section__title">Education and courses:</h2>
-        <ul class="section__list">
-          <li>I have two certificates from <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp</a>.</li>
-          <li>I am also learning on <a href="https://webref.ru/" target="_blank">webref</a>, <a href="http://htmlbook.ru/" target="_blank">htmlbook</a>, <a href="https://www.w3schools.com/" target="_blank">w3schools</a>.</li>
-          <li>I have read books on html&css, js, jQuery topics. I really like the book “CSS in Depth” written by Keith J. Grant and I liked the book “The principles of Object-oriented JavaScript” written by Nicholas C. Zakas.</li>
-        </ul>
-      </section>
-      <section class="cv_main-section section">
-        <h2 class="section__title">Language:</h2>
-        <p class="section__text">My English level is B2.</p>
-        <ul class="section__list">
-          <li>I have <strong>4 sertificates</strong> in the <a href="https://play.google.com/store/apps/details?id=ru.zengalt.simpler&hl=ru&gl=US" target="_blank">Simpler app</a> from Elementary to Upper-Intermediate.</li>
-          <li>On <a href="https://www.duolingo.com/" target="_blank">Duolingo.com</a> my current score is <strong>41 550</strong>.</li>
-          <li>I have <strong>video calls experience</strong> with native speakers.</li>
-          <li><strong>I adore English</strong>, love to read <a href="https://medium.com/" target="_blank">Medium.com</a>, books and programming articles.</li>
-          <li>I like to watch different kinds of videos in English.</li>
-        </ul>
-      </section>
-    </main>
+      <main class="cv__main main">
+        <section id="about" class="main__section section">
+          <h2 class="section__title">About me:</h2>
+          <p class="section__text section__text_color-hightlight">
+            Hello guys, nice to meet you! <span class="section__text-smile">(◕‿◕)</span>
+          </p>
 
-    <footer class="footer">
-      <a class="footer__github" href="https://github.com/sashtje" target="_blank"><img src="images/icons/github.svg" alt="my GitHub" width="40" height="40"></a>
+          <p class="section__text section__text_first-letter-hightlight">
+            My name is Aleksandra (Sashtje is my nickname) and I am an Aspiring Frontend Developer. I am passionate about Web development and design, enjoy coding and learning new things. I like to create various animations and make the communication between a user and a site the most enjoyable and interesting.
+          </p>
 
-      <span class="footer__copyright">© <time datetime="2021">2021</time></span>
+          <p class="section__text section__text_first-letter-hightlight">
+            My goal is to become an excellent specialist, to know all the details in my working area and to create useful, wonderful and amazing works. I am purposeful, responsible, fast learner and I easily find a common language with various people. I am a good team player.
+          </p>
+          <p class="section__text section__text_first-letter-hightlight">
+            If you are looking for <strong>Junior Frontend Developer to your team</strong> or you have <strong>interesting ideas or a project</strong> and you want to collaborate, I will be glad if you <strong>write to me an e-mail</strong> or <strong>contact me via discord</strong>.
+          </p>
+        </section>
 
-      <a class="footer__rsschool" href="https://rs.school/js/" target="_blank"><img src="images/icons/rs_school_js.svg" alt="rs school js" width="90" height="33"></a>
-    </footer>
-  </div>
-</body>
+        <section id="skills" class="main__section section">
+          <h2 class="section__title">Skills:</h2>
+          <ul class="section__skills-list">
+            <li>
+              <figure>
+                <img
+                  src="images/icons/html5.svg"
+                  alt="html5 icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>html5</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/css-3.svg"
+                  alt="css3 icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>css3</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/sass.svg"
+                  alt="sass/scss icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>sass/scss</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/bootstrap.svg"
+                  alt="bootstrap icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>bootstrap</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/markdown.svg"
+                  alt="markdown icon"
+                  width="35"
+                  height="22"
+                />
+                <figcaption>markdown</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/bem.svg"
+                  alt="bem icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>bem</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/prepros.png"
+                  alt="prepros icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>prepros</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/js.svg"
+                  alt="js icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>js</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/jquery.svg"
+                  alt="jquery icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>jquery</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/typescript.svg"
+                  alt="typescript icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>typescript</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/nodejs.svg"
+                  alt="node.js icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>node.js</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/react.svg"
+                  alt="react icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>react</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/npm.svg"
+                  alt="npm icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>npm</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/webpack.svg"
+                  alt="webpack icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>webpack</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/gulp.svg"
+                  alt="gulp icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>gulp</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/mocha.svg"
+                  alt="mocha icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>mocha</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/chai.svg"
+                  alt="chai icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>chai</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/sql.svg"
+                  alt="sql icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>sql</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/python.svg"
+                  alt="python icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>python</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/php.svg"
+                  alt="php icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>php</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/git.svg"
+                  alt="git icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>git</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/github.svg"
+                  alt="github icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>github</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/sublime-text.svg"
+                  alt="sublime text icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>sublime text</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/visual-studio-code.svg"
+                  alt="vs code icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>vs code</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/photoshop.svg"
+                  alt="photoshop icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>photoshop</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/figma.svg"
+                  alt="figma icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>figma</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/icons/inkscape.svg"
+                  alt="inkscape icon"
+                  width="35"
+                  height="35"
+                />
+                <figcaption>inkscape</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+
+        <section id="code" class="main__section section">
+          <h2 class="section__title">Code example:</h2>
+
+          <p class="section__text section__text_first-letter-hightlight">My solution of <a href="https://www.codewars.com/kata/reverse-or-rotate" target="_blank">"Reverse or rotate?"</a> kata from <strong>codewars.com</strong></p>
+
+          <pre class="section__code"><code>function revrot(str, sz) {
+  if (str == '' || sz = 0 || sz &gt; str.length) return "";
+
+  let arr = [];
+  let count = Math.floor(str.length / sz);
+  let resultStr = '';
+  
+  for (let i = 0; i &lt; count; i++)
+    arr.push(str.substr(i * sz, sz));
+  
+  for (let i = 0; i &lt; arr.length; i++)
+    {
+      let sumCubes = arr[i].split('').reduce(function(sum, item) {
+        return sum + Math.pow(Number(item), 3);
+      }, 0);
+      
+      if (sumCubes % 2 == 0) resultStr += arr[i].split('').reverse().join('');
+      else resultStr += arr[i].replace(/^(\d)(\d*)$/, '$2$1');
+    } 
+  return resultStr;
+}</code></pre>
+        </section>
+
+        <section id="projects" class="main__section section">
+          <h2 class="section__title">My projects:</h2>
+
+          <div class="section__projects projects">
+            <figure class="projects__item project-item">
+              <figcaption class="project-item__title">The watch</figcaption>
+              <a href="https://aleksawebdev.github.io/The-watch/" target="_blank" class="project-item__photo-block">
+                <div class="project-item__photo-wrapper">
+                  <img class="project-item__photo" src="images/projects/the-watch.png" alt="The watch 3D">
+                  <div class="project-item__stack">
+                    <img src="images/icons/html5.svg" alt="html" width="30" height="30">
+                    <img src="images/icons/css-3.svg" alt="css" width="30" height="30">
+                    <img src="images/icons/bem.svg" alt="bem" width="30" height="30">
+                    <img src="images/icons/js.svg" alt="js" width="30" height="30">
+                    <img src="images/icons/jquery.svg" alt="jquery" width="30" height="30">
+                  </div>
+                </div>
+              </a>
+              <p class="project-item__description project-item__description_first-letter-hightlight">The Golden watch is my idea from design to implementation. The watch can be opened by clicking on the lid and closed by clicking on the button that appears when the watch opens. For the lid rotation was used 3D transformation. The watch shows the time with the three hands, and also displays the current date. There is a function to turn on the sound. The watch is drawn with only html and css, responsive.</p>
+            </figure>
+
+            <div class="projects__delimiter">
+              <hr>
+            </div>
+
+            <figure class="projects__item project-item">
+              <figcaption class="project-item__title">Timer cat</figcaption>
+              <a href="https://aleksawebdev.github.io/timer-cat/" target="_blank" class="project-item__photo-block">
+                <div class="project-item__photo-wrapper">
+                  <img class="project-item__photo" src="images/projects/timer-cat.png" alt="Timer cat">
+                  <div class="project-item__stack">
+                    <img src="images/icons/html5.svg" alt="html" width="30" height="30">
+                    <img src="images/icons/css-3.svg" alt="css" width="30" height="30">
+                    <img src="images/icons/bem.svg" alt="bem" width="30" height="30">
+                    <img src="images/icons/js.svg" alt="js" width="30" height="30">
+                  </div>
+                </div>
+              </a>
+              <p class="project-item__description project-item__description_first-letter-hightlight">Timer cat is also my idea from design to implementation. There are two mode: light and dark. When the user closes the tab, the timer remembers which mode was turned on last and, when reopened, immediately switches the mode to the last state. The cat's eyes can follow the cursor and blink, cat sleeps when the timer is on and meows when the time is over. Timer is drawn with only html and css, responsive.</p>
+            </figure>
+
+            <div class="projects__delimiter">
+              <hr>
+            </div>
+
+            <figure class="projects__item project-item">
+              <figcaption class="project-item__title">Birthday card</figcaption>
+              <a href="https://aleksawebdev.github.io/Axel-birthday-card/" target="_blank" class="project-item__photo-block">
+                <div class="project-item__photo-wrapper">
+                  <img class="project-item__photo" src="images/projects/birthday-card.png" alt="Birthday card">
+                  <div class="project-item__stack">
+                    <img src="images/icons/html5.svg" alt="html" width="30" height="30">
+                    <img src="images/icons/css-3.svg" alt="css" width="30" height="30">
+                    <img src="images/icons/js.svg" alt="js" width="30" height="30">
+                  </div>
+                </div>
+              </a>
+              <p class="project-item__description project-item__description_first-letter-hightlight">Birthday card was made for my Belgian friend. The site is made in Dutch, you can turn on congratulatory music and a song. There are some simple animations. Responsive.</p>
+            </figure>
+
+            <div class="projects__delimiter">
+              <hr>
+            </div>
+
+            <figure class="projects__item project-item">
+              <figcaption class="project-item__title">Bicycle landing page</figcaption>
+              <a href="https://aleksawebdev.github.io/bicycle-landing-page/" target="_blank" class="project-item__photo-block">
+                <div class="project-item__photo-wrapper">
+                  <img class="project-item__photo" src="images/projects/bicycle-land-page.png" alt="Bicycle landing page">
+                  <div class="project-item__stack">
+                    <img src="images/icons/html5.svg" alt="html" width="30" height="30">
+                    <img src="images/icons/css-3.svg" alt="css" width="30" height="30">
+                    <img src="images/icons/sass.svg" alt="scss" width="30" height="30">
+                    <img src="images/icons/bem.svg" alt="bem" width="30" height="30">
+                    <img src="images/icons/js.svg" alt="js" width="30" height="30">
+                  </div>
+                </div>
+              </a>
+              <p class="project-item__description project-item__description_first-letter-hightlight">Landing page. Just a training layout. Responsive with burger menu.</p>
+            </figure>
+
+            <div class="projects__delimiter">
+              <hr>
+            </div>
+
+            <figure class="projects__item project-item">
+              <figcaption class="project-item__title">Cocktails landing page</figcaption>
+              <a href="https://aleksawebdev.github.io/cocktails/" target="_blank" class="project-item__photo-block">
+                <div class="project-item__photo-wrapper">
+                  <img class="project-item__photo" src="images/projects/cocktails.png" alt="Cocktails landing page">
+                  <div class="project-item__stack">
+                    <img src="images/icons/html5.svg" alt="html" width="30" height="30">
+                    <img src="images/icons/css-3.svg" alt="css" width="30" height="30">
+                    <img src="images/icons/js.svg" alt="js" width="30" height="30">
+                  </div>
+                </div>
+              </a>
+              <p class="project-item__description project-item__description_first-letter-hightlight">Landing page. Just a training layout with sliders and the ability to upload a photo. Responsive.</p>
+            </figure>
+
+            <div class="projects__delimiter">
+              <hr>
+            </div>
+
+            <figure class="projects__item project-item">
+              <figcaption class="project-item__title">Travel project</figcaption>
+              <a href="https://aleksawebdev.github.io/travel-project/" target="_blank" class="project-item__photo-block">
+                <div class="project-item__photo-wrapper">
+                  <img class="project-item__photo" src="images/projects/travel-project.png" alt="Travel project">
+                  <div class="project-item__stack">
+                    <img src="images/icons/html5.svg" alt="html" width="30" height="30">
+                    <img src="images/icons/css-3.svg" alt="css" width="30" height="30">
+                  </div>
+                </div>
+              </a>
+              <p class="project-item__description project-item__description_first-letter-hightlight">Landing page. Just a simple training layout. Responsive.</p>
+            </figure>
+
+            <div class="projects__delimiter">
+              <hr>
+            </div>
+
+            <figure class="projects__item project-item">
+              <figcaption class="project-item__title">A lion in the desert</figcaption>
+              <a href="https://codepen.io/sashtje/full/KKgpKPw" target="_blank" class="project-item__photo-block">
+                <div class="project-item__photo-wrapper">
+                  <img class="project-item__photo" src="images/projects/lion-in-desert.png" alt="A lion in the desert">
+                  <div class="project-item__stack">
+                    <img src="images/icons/html5.svg" alt="html" width="30" height="30">
+                    <img src="images/icons/css-3.svg" alt="css" width="30" height="30">
+                  </div>
+                </div>
+              </a>
+              <p class="project-item__description project-item__description_first-letter-hightlight">Landing page. Just a simple training layout. Responsive.</p>
+            </figure>
+
+            <div class="projects__delimiter">
+              <hr>
+            </div>
+
+            <figure class="projects__item project-item">
+              <figcaption class="project-item__title">Survey form</figcaption>
+              <a href="https://codepen.io/sashtje/full/eYZzdZE" target="_blank" class="project-item__photo-block">
+                <div class="project-item__photo-wrapper">
+                  <img class="project-item__photo" src="images/projects/survey-form.png" alt="Survey form">
+                  <div class="project-item__stack">
+                    <img src="images/icons/html5.svg" alt="html" width="30" height="30">
+                    <img src="images/icons/css-3.svg" alt="css" width="30" height="30">
+                  </div>
+                </div>
+              </a>
+              <p class="project-item__description project-item__description_first-letter-hightlight">My work for <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp</a> site to get "Responsive Web Design" certificate.</p>
+            </figure>
+
+            <div class="projects__delimiter">
+              <hr>
+            </div>
+
+            <figure class="projects__item project-item">
+              <figcaption class="project-item__title">Music World</figcaption>
+              <a href="https://codepen.io/sashtje/full/wvGJevz" target="_blank" class="project-item__photo-block">
+                <div class="project-item__photo-wrapper">
+                  <img class="project-item__photo" src="images/projects/music-world.png" alt="Music World">
+                  <div class="project-item__stack">
+                    <img src="images/icons/html5.svg" alt="html" width="30" height="30">
+                    <img src="images/icons/css-3.svg" alt="css" width="30" height="30">
+                  </div>
+                </div>
+              </a>
+              <p class="project-item__description project-item__description_first-letter-hightlight">My work for <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp</a> site to get "Responsive Web Design" certificate.</p>
+            </figure>
+
+            <div class="projects__delimiter">
+              <hr>
+            </div>
+
+            <figure class="projects__item project-item">
+              <figcaption class="project-item__title">Tech documentation</figcaption>
+              <a href="https://codepen.io/sashtje/full/xxVrQQy" target="_blank" class="project-item__photo-block">
+                <div class="project-item__photo-wrapper">
+                  <img class="project-item__photo" src="images/projects/tech-documentation.png" alt="Tech documentation">
+                  <div class="project-item__stack">
+                    <img src="images/icons/html5.svg" alt="html" width="30" height="30">
+                    <img src="images/icons/css-3.svg" alt="css" width="30" height="30">
+                  </div>
+                </div>
+              </a>
+              <p class="project-item__description project-item__description_first-letter-hightlight">My work for <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp</a> site to get "Responsive Web Design" certificate.</p>
+            </figure>
+
+            <div class="projects__delimiter">
+              <hr>
+            </div>
+
+            <figure class="projects__item project-item">
+              <figcaption class="project-item__title">Tribute page</figcaption>
+              <a href="https://codepen.io/sashtje/full/vYGGdqW" target="_blank" class="project-item__photo-block">
+                <div class="project-item__photo-wrapper">
+                  <img class="project-item__photo" src="images/projects/tribute-page.png" alt="Tribute page">
+                  <div class="project-item__stack">
+                    <img src="images/icons/html5.svg" alt="html" width="30" height="30">
+                    <img src="images/icons/css-3.svg" alt="css" width="30" height="30">
+                  </div>
+                </div>
+              </a>
+              <p class="project-item__description project-item__description_first-letter-hightlight">My work for <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp</a> site to get "Responsive Web Design" certificate.</p>
+            </figure>
+
+            <div class="projects__delimiter">
+              <hr>
+            </div>
+
+            <figure class="projects__item project-item">
+              <figcaption class="project-item__title">Fake portfolio</figcaption>
+              <a href="https://codepen.io/sashtje/full/MWyrdOG" target="_blank" class="project-item__photo-block">
+                <div class="project-item__photo-wrapper">
+                  <img class="project-item__photo" src="images/projects/fake-portfolio.png" alt="Fake portfolio">
+                  <div class="project-item__stack">
+                    <img src="images/icons/html5.svg" alt="html" width="30" height="30">
+                    <img src="images/icons/css-3.svg" alt="css" width="30" height="30">
+                  </div>
+                </div>
+              </a>
+              <p class="project-item__description project-item__description_first-letter-hightlight">My work for <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp</a> site to get "Responsive Web Design" certificate.</p>
+            </figure>
+          </div>
+        </section>
+
+        <section id="video" class="main__section section">
+          <h2 class="section__title">Video:</h2>
+          <div class="section__video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/igDudVbc63w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </section>
+
+        <section id="courses" class="main__section section">
+          <h2 class="section__title">Education and courses:</h2>
+          <ul class="section__list">
+            <li>
+              I am currently learning in <a href="https://rs.school/" target="_blank">RSSchool</a> JS/Frontend.
+            </li>
+            <li>
+              I have two certificates from
+              <a href="https://www.freecodecamp.org/" target="_blank"
+                >freecodecamp</a
+              >: <a href="https://www.freecodecamp.org/certification/aleksawebdev/responsive-web-design" target="_blank">"Responsive Web Design"</a> and <a href="https://www.freecodecamp.org/certification/aleksawebdev/javascript-algorithms-and-data-structures" target="_blank">"JavaScript Algorithms and Data Structures"</a>. And I continue learning there.
+            </li>
+            <li>
+              I am also learning on
+              <a href="https://webref.ru/" target="_blank">webref</a>,
+              <a href="http://htmlbook.ru/" target="_blank">htmlbook</a>,
+              <a href="https://www.w3schools.com/" target="_blank">w3schools</a
+              >, <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">MDN Web Docs</a> and <a href="https://learn.javascript.ru/" target="_blank">javascript.ru</a>.
+            </li>
+            <li>
+              I have read books on html&css, js, jQuery, git, algorithms topics. And I continue to read books on other Frontend technologies and frameworks and actively follow the news.
+            </li>
+          </ul>
+        </section>
+
+        <section id="languages" class="main__section section">
+          <h2 class="section__title">Languages:</h2>
+
+          <p class="section__text section__text_lang-highlight">Russian is native.</p>
+
+          <details class="section__details">
+            <summary class="section__summary section__text section__text_lang-highlight">English is B2+.</summary>
+            <ul class="section__list">
+              <li>
+                I have <strong>4 sertificates</strong> in the
+                <a
+                  href="https://play.google.com/store/apps/details?id=ru.zengalt.simpler&hl=ru&gl=US"
+                  target="_blank"
+                  >Simpler app</a
+                >
+                from Elementary to Upper-Intermediate: 
+                <div class="section__list-sertificates-block">
+                  <img src="images/simpler/elementary.png" alt="elementary">
+                  <img src="images/simpler/pre-intermediate.png" alt="pre-intermediate">
+                  <img src="images/simpler/intermediate.png" alt="intermediate">
+                  <img src="images/simpler/upper-intermediate.png" alt="upper-intermediate">
+                </div>
+              </li>
+              <li>
+                On
+                <a href="https://www.duolingo.com/profile/RoboOwl" target="_blank"
+                  >Duolingo.com</a
+                >
+                my current score is <strong>42 816</strong>.
+              </li>
+              <li>
+                I have <strong>video calls experience</strong> with native
+                speakers.
+              </li>
+              <li>
+                <strong>I adore English</strong>, love to read
+                <a href="https://medium.com/" target="_blank">Medium.com</a>,
+                books and programming articles.
+              </li>
+              <li>I like to watch different kinds of videos in English.</li>
+            </ul>
+          </details>
+
+          <p class="section__text section__text_lang-highlight">Dutch is A1.</p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <a
+          class="footer__github"
+          href="https://github.com/sashtje"
+          target="_blank"
+          ><img
+            src="images/icons/github.svg"
+            alt="my GitHub"
+            width="40"
+            height="40"
+        /></a>
+
+        <span class="footer__copyright"
+          >© <time datetime="2021">2021</time></span
+        >
+
+        <a class="footer__rsschool" href="https://rs.school/js/" target="_blank"
+          ><img
+            src="images/icons/rs_school_js.svg"
+            alt="rs school js"
+            width="90"
+            height="33"
+        /></a>
+      </footer>
+
+      <button class="cv__btn-scroll-to-top" id="btn-scroll-top" title="Go to top">
+          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px" height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve"> <g> <g id="_x36__34_"> <g> <path d="M322.811,180.999c-4.59-4.571-10.882-6.005-16.811-4.953c-5.929-1.052-12.221,0.382-16.811,4.953l-108.19,108.19c-7.478,7.478-7.478,19.584,0,27.042c7.478,7.479,19.584,7.479,27.043,0l78.833-78.813v202.457c0,10.557,8.568,19.125,19.125,19.125c10.557,0,19.125-8.568,19.125-19.125V237.418l78.814,78.813c7.478,7.479,19.584,7.479,27.042,0c7.479-7.478,7.479-19.583,0-27.042L322.811,180.999z M306,0C137.012,0,0,136.992,0,306s137.012,306,306,306c169.008,0,306-137.012,306-306S475.008,0,306,0z M306,573.75C158.125,573.75,38.25,453.875,38.25,306C38.25,158.125,158.125,38.25,306,38.25c147.875,0,267.75,119.875,267.75,267.75C573.75,453.875,453.875,573.75,306,573.75z"/> </g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+        </svg>
+      </button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js" integrity="sha512-MinqHeqca99q5bWxFNQEQpplMBFiUNrEwuuDj2rCSh1DgeeTXUgvgYIHZ1puBS9IKBkdfLMSk/ZWVDasa3Y/2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
