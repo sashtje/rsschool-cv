@@ -28,7 +28,7 @@ body.dark {
 a {
   color: #0000ff;
   cursor: url("../images/cur/cur-pointer.cur"), pointer;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 a:visited {
