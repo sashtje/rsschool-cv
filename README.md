@@ -1,5 +1,13 @@
 # rsschool-cv
 
-Just a tutorial project
+💼 CV as a study project
 
-https://sashtje.github.io/rsschool-cv/
+## Used technologies:
+- Markdown
+- HTML
+- CSS
+- JavaScript
+
+## Deploy:
+[Click here to open the CV](https://sashtje.github.io/rsschool-cv/)
+
